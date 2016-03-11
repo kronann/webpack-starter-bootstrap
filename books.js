@@ -46,7 +46,7 @@ var SearchBar = React.createClass({
 var LibraryComponent = React.createClass({
   render : function(){
     var rows = [];
-    this.props.books.forEach(function(books) {
+    BOOKS.forEach(function(BOOKS) {
         rows.push(<BookRow />);
     });
     return (
@@ -59,6 +59,7 @@ var LibraryComponent = React.createClass({
     );
   }
 });
+export default LibraryComponent
 
 
 // ReactDOM.render(
